@@ -226,7 +226,7 @@ define(['require', './normalize'], function(req, normalize) {
         // + '    css.inject(normalize(\'' + css + '\', baseUrl, pathname)); \n'
         + '    css.inject(\'' + css + '\'); \n'
         + '  }); \n'
-        + '  for (var c in requirejs.s.contexts) { requirejs.s.contexts[c].nextTick = requirejs.nextTick; } \n'
+        // + '  for (var c in requirejs.s.contexts) { requirejs.s.contexts[c].nextTick = requirejs.nextTick; } \n'
         + '})(this);'
       );
     }

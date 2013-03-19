@@ -118,7 +118,9 @@ define(['require', './normalize'], function(req, normalize) {
 
     //normalize all css to the base url - as the common path reference
     //for injection we then only need one normalization from the base url
-    css = normalize(css, fileUrl, baseUrl);
+    
+    // TODO: /!\ BUG FOR BASE 64 IMAGE
+    // css = normalize(css, fileUrl, baseUrl);
 
     // parse if necessary
     if (parse)
